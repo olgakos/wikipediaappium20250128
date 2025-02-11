@@ -1,5 +1,6 @@
 package com.example.wikipedia;
 
+import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.remote.AutomationName;
@@ -10,8 +11,8 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.net.URL;
 
-public class WikiDriver {
-    private static final String appiumUrl = "http://0.0.0.0:4723/wd/hub/";
+public class WikiDriver implements WebDriverProvider {
+    private static final String appiumUrl = "http://0.0.0.0:4723/";
     private static final String pathToApk = "src/test/resources/app/wiki.apk";
 
     @Override
@@ -23,7 +24,7 @@ public class WikiDriver {
         options.merge(capabilities);
         options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
         options.setPlatformName("Android");
-        options.setDeviceName("Pixel5API30new"); //из АппиумИнспектор
+        options.setDeviceName("Pixel 2 API 30"); //из Девайсов
         options.setPlatformVersion("11.0");
         options.setApp(apk.getAbsolutePath());
         options.setAppPackage("org.wikipedia");
