@@ -23,7 +23,7 @@ public class WikiDriver {
         options.merge(capabilities);
         options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
         options.setPlatformName("Android");
-        options.setDeviceName("Pixel5API30new");
+        options.setDeviceName("Pixel5API30new"); //из АппиумИнспектор
         options.setPlatformVersion("11.0");
         options.setApp(apk.getAbsolutePath());
         options.setAppPackage("org.wikipedia");
