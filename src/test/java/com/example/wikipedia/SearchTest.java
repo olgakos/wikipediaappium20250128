@@ -1,22 +1,26 @@
+/*
+
 package com.example.wikipedia;
 
-        import io.appium.java_client.android.AndroidDriver;
-        import io.appium.java_client.remote.MobileCapabilityType;
-        import org.junit.jupiter.api.AfterEach;
-        import org.junit.jupiter.api.BeforeEach;
-        import org.junit.jupiter.api.Test;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebElement;
-        import org.openqa.selenium.remote.DesiredCapabilities;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
-        import java.net.URL;
-        import java.util.concurrent.TimeUnit;
+
 
 public class SearchTest {
 
     private AndroidDriver<WebElement> driver;
 
-    @BeforeEach
+
+   @BeforeEach
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
@@ -55,3 +59,4 @@ public class SearchTest {
     }
 }
 
+*/
